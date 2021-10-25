@@ -42,3 +42,11 @@ const getInfo = async (e)=>{
 }
 
 submitBtn.addEventListener("click", getInfo);
+
+
+const burger = document.querySelector(".burger");
+
+burger.addEventListener("click", ()=>{
+  const dataActive = document.querySelector(".data");
+  dataActive.classList.toggle("data-active");
+});

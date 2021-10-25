@@ -218,3 +218,64 @@ font-weight: 900;
   visibility: hidden;
   transition: all 0.3s linear;
 }
+
+/* Burger menu */
+.burger{
+  margin-top: 3rem;
+  display: none;
+}
+.burger div{
+  cursor: pointer;
+  width:3rem;
+  height: 3px;
+  background-color: #fff;
+  margin: 0.5rem;
+}
+
+/* Responsive style */
+
+@media (max-width:768px){
+  .header-data h1 {
+    font-size: 2.5rem;
+  }
+  .left-side {
+    width: 40%;
+    margin-left:7rem;
+  }
+}
+@media (max-width:540px){
+  .burger{
+    display: block;
+  }
+  .data{
+    position: absolute;
+    top:-20%;
+    left: 0%;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    background-color: var(--main-bg);
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+    z-index: 0;
+  }
+  .input{
+    width: 40rem;
+    background-color: var(--main-bg);
+    padding: 0.5rem 1.5rem;
+    font-size: 2rem;
+    border: none;
+    color: #fff;
+    outline: none;
+  }
+  form{
+    display: flex;
+    margin-top: 7rem;
+  }
+}
+.data-active{
+  top: 10%;
+}
+@media (max-width:375px){
+  
+}

@@ -4,7 +4,8 @@
   "description": "Created weather app in express js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "src/weatherapp.js"
   },
   "author": "Abhishek",
   "license": "ISC",
